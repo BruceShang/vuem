@@ -1,0 +1,226 @@
+// @font-face {
+//   font-family: 'iconfont';
+//   src: url('//at.alicdn.com/t/font_824217_6uqyh7qzdw3.eot');
+//   src: url('//at.alicdn.com/t/font_824217_6uqyh7qzdw3.eot?#iefix') format('embedded-opentype'),
+//   url('//at.alicdn.com/t/font_824217_6uqyh7qzdw3.woff') format('woff'),
+//   url('//at.alicdn.com/t/font_824217_6uqyh7qzdw3.ttf') format('truetype'),
+//   url('//at.alicdn.com/t/font_824217_6uqyh7qzdw3.svg#iconfont') format('svg');
+// }
+@font-face {
+  font-family: 'iconfont';  /* project id 824217 */
+  src: url('//at.alicdn.com/t/font_824217_ikhuo3gum0r.eot');
+  src: url('//at.alicdn.com/t/font_824217_ikhuo3gum0r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_824217_ikhuo3gum0r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_824217_ikhuo3gum0r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_824217_ikhuo3gum0r.svg#iconfont') format('svg');
+}
+.icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: -10px;
+  fill: currentColor;
+  overflow: hidden;
+}
+.we-icon {
+  direction: ltr;
+  display: inline-block;
+  font: normal normal normal $font-size/1 "iconfont";
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+  text-rendering: auto;
+  text-transform: none;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &--left-arrow::before {
+    // 向左
+    content: "\e605";
+  }
+  &--right-arrow::before {
+    // 向右
+    content: "\e644";
+  }
+  &--down-arrow::before {
+    // 向下
+    content: "\e612";
+  }
+  &--up-arrow::before {
+    // 向上
+    content: "\e645";
+  }
+  &--menu-index::before {
+    content: "\e60e";
+  }
+  &--menu-street::before {
+    content: "\e60f";
+  }
+  &--menu-home::before {
+    content: "\e605";
+  }
+  &--menu-shopping::before {
+    content: "\e610";
+  }
+  &--menu-my::before {
+    content: "\e611";
+  }
+  &--search::before {
+    // 搜索
+    content: "\e613";
+  }
+  &--message::before {
+    // 信息盒子
+    content: "\e614";
+  }
+  &--cancel-X::before {
+    // 取消
+    content: "\e607";
+  }
+  &--weixin::before {
+    // 微信
+    content: "\e60a";
+  }
+  &--circle-left::before {
+    // 向左 - 外围有圆包裹
+    content: "\e622";
+  }
+  &--close::before {
+    // 关闭
+    content: "\e60c";
+  }
+  &--notice::before {
+    // 通知
+    content: "\e617";
+  }
+  &--remind::before {
+    // 提醒
+    content: "\e615";
+  }
+  &--train-message::before {
+    // 培训 - 信息
+    content: "\e616";
+  }
+  &--order-message::before {
+    // 订单
+    content: "\e618";
+  }
+  &--back-top::before {
+    // 回到顶部
+    content: "\e61f";
+  }
+  &--to-right::before {
+    // 向右 - 双箭头
+    content: "\e63b";
+  }
+  &--sort::before {
+    // 排序
+    content: "\e66c";
+  }
+  &--tick-right::before {
+    // 打勾
+    content: "\e606";
+  }
+  &--loading::before {
+    // 加载
+    content: "\e65e";
+  }
+  &--choiceness::before {
+    // 精选
+    content: "\e621";
+  }
+  &--choicenessed::before {
+    // 已精选
+    content: "\e623";
+  }
+  &--add::before {
+    // 加号
+    content: "\e651";
+  }
+  &--subtraction::before {
+    // 减号
+    content: "\e601";
+  }
+  &--zhuyi::before {
+    // 减号
+    content: "\e61a";
+  }
+  &--notes::before {
+    // 疑问
+    content: "\e602";
+  }
+  &--choice::before {
+    // 选择
+    content: "\e661";
+  }
+  &--noChoice::before {
+    // 未选择
+    content: "\e75d";
+  }
+  &--collect::before {
+    // 收藏
+    content: "\e61d";
+  }
+  &--collected::before {
+    // 已收藏
+    content: "\e61e";
+  }
+  &--share::before {
+    // 分享
+    content: "\e620";
+  }
+  &--menu-find::before {
+    // 发现
+    content: "\e603";
+  }
+  &--address-edit::before {
+    // 地址-编辑
+    content: "\e624";
+  }
+}
+
+WeIconGroupSize(size, fontSize, scale) {
+  width: size;
+  height: size;
+  line-height: size;
+  .we-icon {
+    font-size: fontSize
+    transform: scale(scale)
+  }
+}
+
+WeIconGroupColor(bgColor, iconColor) {
+  background-color: bgColor;
+  .we-icon {
+    color: iconColor;
+  }
+}
+
+.we-icon-group {
+  display: inline-flex;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  &--small {
+    WeIconGroupSize($font-size-h4, $font-size-xs, 0.6)
+  }
+  &--medium {
+    WeIconGroupSize($font-size-lg, $font-size-sm, 0.8)
+  }
+  &--large {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  &--default {
+    WeIconGroupColor($layout-border-color, #222)
+  }
+  &--primary {
+    WeIconGroupColor($color-primary, $white)
+  }
+  &--darker {
+    WeIconGroupColor(#404040, $white)
+  }
+}

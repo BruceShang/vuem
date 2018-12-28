@@ -1,0 +1,72 @@
+.we-checkbox,
+.we-radio {
+  display: inline-block;
+  padding-left: 44px;
+  position: relative;
+  vertical-align: middle;
+
+  &--block {
+    display: block;
+  }
+
+  &--right {
+    padding-left: 0;
+    padding-right: 44px;
+  }
+
+  &__input,
+  &__indicator {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+
+    ^[0]--right & {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &__input {
+    height: 44px;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &__indicator {
+    @extends .we-icon;
+    border: $border;
+    color: $border-color;
+    display: block;
+    font-size: 0;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 44px;
+    border-radius: 3px;
+
+    // @extends .we-icon--check;
+    &::before {
+      content: "\e61e";
+    }
+
+    ^[0]__input:checked ~ & {
+      //border-color: $color-primary;
+      //color: $color-primary;
+      border-color: $dark;
+      color: $dark;
+      font-size: 35px;
+    }
+  }
+}
+
+.we-radio {
+  &__indicator {
+    border-color: transparent;
+
+    ^[0]__input:checked ~ & {
+      border-color: transparent;
+    }
+  }
+}

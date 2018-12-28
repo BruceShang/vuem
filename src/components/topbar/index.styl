@@ -1,0 +1,99 @@
+.components-topbar {
+  display: flex;
+  width: 100%;
+  height: $topbar-height;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.2);
+  line-height: $topbar-height - 1px;
+  text-align: center;
+  background: #ffffff;
+  color: $color;
+  font-size: 36px;
+
+  &__fixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: $z-index-topbar;  
+  }
+  // 基础样式
+  .topbar {
+    &__body {
+      flex: 1; 
+      text-align: center; 
+    }
+
+    &__header, &__footer {
+      display: block;
+      min-width: 88px;
+      height: 88px;  
+      a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #333;
+        i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%)
+        }
+      }  
+    }
+    &__footer {
+      // width: auto;
+      padding-right: 20px;  
+    }
+    input-wrap-base() {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 58px;
+      line-height: 58px;
+      font-size: 24px;
+    }
+    // 首页 - 搜索
+    &__inputwrap {
+      position: relative;
+      height: 88px;
+      padding: 15px 0px;
+      span {
+       input-wrap-base();
+        border-radius: 5px; 
+        background-color: $gray-input;  
+        color: $gray-lighter;      
+      }
+    }
+    // 可操作的topbar input
+    &__search-wrap {
+      position: relative;
+      height: 88px;
+      
+      input {
+       input-wrap-base();
+        border: none;
+        border-radius: 35px;
+        color: $dark; 
+        background-color: $gray-input; 
+        padding: 0 50px 0 30px;
+      }
+      input:placeholder {
+        color: $gray-lighter; 
+      }
+      i {
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        color: $gray-lighter;
+      }
+    }
+
+    &__primary {
+      color: $color-primary;
+    }
+  }
+}

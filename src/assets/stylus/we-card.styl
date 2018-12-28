@@ -1,0 +1,78 @@
+.we-card {
+  overflow: hidden;
+  position: relative;
+  padding: 0px 30px;
+
+  & + & {
+    margin-top: 16px;
+  }
+
+  &__header,
+  &__body,
+  &__footer {
+    display: block;
+    min-height: 88px;
+    // padding: 0 20px;
+  }
+
+  &__header {
+    border-bottom: $border;
+    position: relative;
+
+    &:only-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__footer {
+    border-top: $border;
+    line-height: 88px;
+    &:only-child {
+      border-top: 0;
+    }
+  }
+
+  &__title {
+    color: $gray-dark;
+    font-size: 32px;
+    line-height: 88px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    + .card__text {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+
+  &__menu {
+    padding: 23px 0px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $gray-light;
+    a {
+      color: inherit;
+
+      + a {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__line,
+  &__special-line {
+    border-top: $border;
+    display: block;
+    height: 0;
+    margin: 0 20px;
+  }
+
+  &__special-line {
+    margin: 0 0 0 30px;
+  }
+}

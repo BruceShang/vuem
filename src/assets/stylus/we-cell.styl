@@ -1,0 +1,37 @@
+.we-cell {
+  display: flex;
+  overflow: hidden;
+  line-height 88px
+  // padding 0 20px
+  position: relative;
+
+  &__vertical-center {
+    align-items: center;
+  }
+
+  &__center {
+    justify-content: center;
+  }
+
+  & + &::before {
+    border-top: $border;
+    content: " ";
+    display: block;
+    height: 0;
+    left: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__body {
+    flex: 1;
+  }
+  &__footer {
+    color: $gray-light;
+    max-width: 70%;
+  }
+  a& {
+    color: inherit;
+  }
+}

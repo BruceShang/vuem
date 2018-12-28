@@ -1,0 +1,95 @@
+// Variables
+// --------------------------------------------------
+
+@import "mixins";
+
+
+// Base
+// -------------------------
+
+$root = 26px;
+$default-height  = 88px;
+
+
+// Fonts
+// -------------------------
+
+$font-size    = $root;
+$font-family  = "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$line-height  = 1.5;
+$font-size-lg = 50px;
+$font-size-md = $root;
+$font-size-sm = 24px;
+$font-size-xs = 20px;
+
+$font-size-h1 = 42px;
+$font-size-h2 = 36px;
+$font-size-h3 = 32px;
+$font-size-h4 = 30px;
+$font-size-h5 = $root;
+$font-size-h6 = 26px;
+
+
+// Colors
+// -------------------------
+$dark          = #292929;     // 标题颜色
+$gray-dark     = #595959;     // 主要文字信息内容等 - 标题,副标题颜色
+$gray          = #808080;  // 副标题,正文颜色
+$gray-light    = #adadad;     // 描述文字,弱文字颜色, 大部分列表的标题名颜色
+$gray-lighter  = #d9d9d9;     // 按钮置灰、边框
+$gray-lightest = #c8c7cc;  // 弱文字,占位符,重置,失效等文字颜色
+$gray-border = #ececec;  // 边框线
+$gray-input = #f7f7f7;  // 表单背景、细线
+$white         = #fff;     // 深色背景下的字体颜色
+
+$body-background-color    = #ffffff;
+$content-background-color = $white;
+$background-color         = $body-background-color;
+$title-background-color   = #fbfbfb;
+
+$color-default = $gray-dark;
+$color-primary = #292929; // 主色调为红色
+$color-accent  = #eb4d3d; // 辅色调为蓝色
+$color-success = #4cc53f; // 绿色
+$color-warning = #fba109; // 黄色
+$color-danger  = #c27073; // 红色
+$color-inverse = $gray-dark;
+$color-primary-button = ''  // 立即购买按钮颜色定义，如果未配置则会取主色调
+$color = $color-default;
+
+
+
+// Borders
+// -------------------------
+
+$layout-border-color  = #ececec;             // 页面布局级的边框颜色
+$content-border-color = #e4e4e4;             // 页面内容块间的间隔线颜色
+$border-color         = $layout-border-color;
+$border-radius        = 4px;
+$border               = 1px solid $border-color;
+$content-border       = 1px solid $content-border-color;
+
+
+
+// Topbar
+// -------------------------
+
+$topbar-height = $default-height;
+
+
+// Z Indexes
+// -------------------------
+
+$z-index-back-top = 99;
+$z-index-footer-action-bar = 100;
+$z-index-seacher-bar = 1001;
+$z-index-seacher-filter-modal = 1000;
+$z-index-seacher-filter-list = 1010;
+$z-index-switcher = 1020;
+$z-index-navbar = 1030;
+$z-index-modal = 2000;
+$z-index-dialog = 2010;
+$z-index-loading = 2020;
+$z-index-select = 2030;
+$z-index-toast = 10001;
+$z-index-topbar = 10000;
