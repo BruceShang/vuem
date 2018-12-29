@@ -10,6 +10,31 @@
 ```
 npm install @position/vuem --save-dev
 ```
+## 全局配置
+
+```js
+import Vuem, { VueDialog, VueLoading, VueToast} from '@position/vuem';
+
+Vue.use(Vuem);
+
+Vue.use(VueDialog, {
+  container: '#app',
+});
+
+Vue.use(VueLoading, {
+  container: '#app',
+});
+
+Vue.use(VueToast, {
+  container: '#app',
+});
+```
+
+## 安装相关依赖包
+
+```js
+npm i --save-dev stylus stylus-loader postcss-pxtorem vue-lazyload vue-awesome-swiper
+```
 
 ## Project setup
 ```
@@ -35,6 +60,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
