@@ -1,10 +1,3 @@
-/*
- * @Desc: load-more 
- * @Author: shangzhen 
- * @Date: 2018-08-09 19:00:10 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-12-10 11:05:35
- */
 <template>
   <div class="component-loadmore" ref="loadmore">
     <div class="loadmore__body">
@@ -27,6 +20,7 @@
   const CancelToken = axios.CancelToken
 
   export default {
+    name: 'we-load-more',
     data() {
       return {
         /**

@@ -16,17 +16,12 @@ import WeCheckbox from './checkbox/index.vue'
 import WeRadio from './radio/index.vue'
 import Topbar from './topbar/index.vue'
 import LoadMore from './load-more/index.vue'
-// import WeMenus from './menus/index.vue'
-// import imgCut from './imgCut/imgCut.vue'
-import address from './address/address.vue'
+import address from './address/index.vue'
 import WeFooterLine from './footer-bottom-line/index'
-import WeBackTop from './back-top/index'
 import DialogBox from './dialog-box/index'
 import WeSwitch from './switch/index'
 import CountDown from './count-down/index.vue'
 import WeInput from './input/index.vue'
-// import ShareTip from './share-tip/index.vue'
-import DownloadApp from './download-app/index.vue'
 
 // component
 Vue.component('WeImg', WeImg)
@@ -36,17 +31,12 @@ Vue.component('WeCheckbox', WeCheckbox)
 Vue.component('WeRadio', WeRadio)
 Vue.component('Topbar', Topbar)
 Vue.component('LoadMore', LoadMore)
-// Vue.component('WeMenus', WeMenus)
-// Vue.component('imgCut', imgCut)
 Vue.component('Address', address)
 Vue.component('WeFooterLine', WeFooterLine)
-Vue.component('WeBackTop', WeBackTop)
 Vue.component('DialogBox', DialogBox)
 Vue.component('WeSwitch', WeSwitch)
 Vue.component('CountDown', CountDown)
 Vue.component('WeInput', WeInput)
-// Vue.component('ShareTip', ShareTip)
-Vue.component('DownloadApp', DownloadApp)
 
 Vue.use(VueLazyload, {
   preLoad: 2, // 图片加载的高度范围比例，默认为1.3，数字越大，预加载图片越多，数字越小，预加载图片数量越少

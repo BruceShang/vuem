@@ -21,7 +21,7 @@
 
 <script type="text/babel">
 export default {
-  name: 'topbar',
+  name: 'we-topbar',
   props: {
     /**
      * 顶部title

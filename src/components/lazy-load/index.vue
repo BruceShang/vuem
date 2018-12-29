@@ -1,10 +1,3 @@
-/*
- * @Desc: 懒加载 
- * @Author: shangzhen 
- * @Date: 2018-08-09 18:59:57 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-11-15 15:23:27
- */
 <template>
   <div class="lazy-load">
     <img v-lazy="src" :key="src" :alt="alt" lazy="loading">
@@ -13,6 +6,7 @@
 
 <script>
 export default {
+  name: 'we-img',
   data() {
     return {
     }

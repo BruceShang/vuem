@@ -1,10 +1,3 @@
-/*
- * @Desc: 复选框 
- * @Author: shangzhen 
- * @Date: 2018-08-09 18:58:56 
- * @Last Modified by: Yushuizeng
- * @Last Modified time: 2018-11-12 17:12:06
- */
 <template>
     <div class="checkbox-component">
         <input type="checkbox"

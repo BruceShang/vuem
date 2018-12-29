@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'we-footer-line',
+  }
+</script>
+
 <style lang="stylus" scoped>
 .components-footer-bottom-line {
   width: 100%;
@@ -26,10 +32,10 @@
       background-color: #ADADAD;
     }
     &::before {
-      left: -10px; 
-    } 
+      left: -10px;
+    }
     &::after {
-      right: -10px;  
+      right: -10px;
     }
   }
 }

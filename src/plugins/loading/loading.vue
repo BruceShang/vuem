@@ -9,7 +9,8 @@
 <!-- <p>正在努力加载中......</p> -->
      <!-- <i>
      </i> -->
-       <img src="~assets/images/loading.png" alt="">
+       <img src="../../assets/images/loading.png" alt="">
+       <!-- <img src="assets/images/loading.png" alt=""> -->
        <p>正在加载...</p>
     </div>
   </div>
@@ -160,7 +161,7 @@
   @keyframes rotation {
     from {
       transform: rotate(0deg);
-    }  
+    }
     to {
       transform: rotate(360deg);
     }
@@ -195,7 +196,7 @@
       top: 50%;
       left: 50%;
       text-align: center;
-      transform: translate(-50%, -50%);  
+      transform: translate(-50%, -50%);
       color: gray;
       // background: rgba(0, 0, 0, 0.6);
       // border-radius: 10%;
@@ -215,7 +216,7 @@
     }
 
     &--fade-in {
-      opacity: 1;  
+      opacity: 1;
     }
   }
 </style>

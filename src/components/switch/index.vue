@@ -1,10 +1,3 @@
-/*
- * @Desc: switch 
- * @Author: shangzhen 
- * @Date: 2018-09-21 11:48:27 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-09-21 14:29:39
- */
 <template>
     <div class="switch-components" :class="{'switch--bg': toggle}" @click="onHandle">
       <span class="switch__circle" :class="{'switch__active': toggle}"></span>
@@ -82,7 +75,7 @@ export default {
       top: 3px;
       width: 50px;
       height: 50px;
-      border-radius: 50%;  
+      border-radius: 50%;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 0px;
       background-color: $white;
       transition: all 0.3s ease;
@@ -94,7 +87,7 @@ export default {
   }
 }
 .switch--bg {
-  background-color: $color-success; 
+  background-color: $color-success;
   border: 1px $color-success solid;
 }
 </style>

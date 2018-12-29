@@ -26,6 +26,7 @@
   import address from './json/area.min.json'
 
   export default {
+    name: 'we-address',
     data() {
       return {
         showChose: false,
@@ -164,18 +165,18 @@
     },
   }
 </script>
+
 <style scoped lang="stylus">
+  /* eslint-disable */
   .myAddress {
     width: 100%;
     background-color: white;
     border-top: 4px solid rgba(245, 245, 245, 1);
     color: #333;
   }
-  
   .myAddress .cont {
     border-bottom: 1px solid rgba(245, 245, 245, 0.8);
   }
-  
   .myAddress .cont span {
     display: inline-block;
     font-size: 0.28rem;
@@ -183,11 +184,9 @@
     line-height: 0.88rem;
     margin-left: 0.32rem;
   }
-  
   .myAddress .cont section {
     float: left;
   }
-  
   .myAddress .cont p {
     display: inline-block;
     font-size: 0.28rem;
@@ -195,18 +194,15 @@
     line-height: 0.88rem;
     margin-left: 1rem;
   }
-  
   .myAddress .cont .pic2 {
     float: right;
     width: 0.14rem;
     height: 0.24rem;
     margin: 0.32rem 0.32rem 0.32rem 0;
   }
-  
   .myAddress .cont p.text {
     margin-left: 0.72rem;
   }
-  
   .showChose {
     width: 100%;
     height: 100%;
@@ -216,7 +212,6 @@
     z-index: 120;
     background: rgba(77, 82, 113, 0.8);
   }
-  
   .address {
     position: absolute;
     bottom: 0;
@@ -226,7 +221,6 @@
     width: 100%;
     height: 700px;
   }
-  
   .title h4 {
     display: inline-block;
     margin-left: 3.2rem;
@@ -235,14 +229,12 @@
     font-weight: normal;
     color: #999;
   }
-  
   .title span {
     margin: 0.42rem 0 0 2.2rem;
     font-size: 0.45rem;
     line-height: 0.34rem;
     color: #D8D8D8;
   }
-  
   .area {
     display: inline-block;
     font-size: 0.24rem;
@@ -250,7 +242,6 @@
     margin-left: 0.42rem;
     color: #333;
   }
-  
   .addList {
     width: 100%;
     padding-left: 0.32rem;
@@ -259,23 +250,19 @@
     color: #333;
   }
   /* 修改的格式 */
-  
   .address ul {
     width: 95%;
     height: 100%;
     max-height: 4.4rem;
     overflow: auto;
   }
-  
   .address ul li {
     margin-left: 5%;
   }
-  
   .address .title .active {
     color: #0071B8;
     border-bottom: 0.02rem solid #0071B8;
   }
-  
   .address ul .active {
     color: #0071B8;
   }

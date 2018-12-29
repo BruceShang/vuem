@@ -1,6 +1,6 @@
 {
   "name": "@position/vuem",
-  "version": "0.1.2",
+  "version": "0.1.29",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

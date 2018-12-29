@@ -1,11 +1,3 @@
-/*
- * @Desc: number-input 
- * @Author: shangzhen 
- * @Date: 2018-09-20 16:32:48 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-10-30 11:33:34
- */
-
 <template>
   <div class="component-number-inputer">
     <button type="button" @click="decrease" :disabled="!decreasable"></button>
@@ -16,6 +8,7 @@
 
 <script>
   export default {
+    name: 'we-number-input',
     data() {
       return {
         /**

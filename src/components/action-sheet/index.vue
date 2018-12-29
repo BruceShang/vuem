@@ -1,10 +1,3 @@
-/*
- * @Desc: action-sheet 自定义组件 
- * @Author: shangzhen 
- * @Date: 2018-09-20 16:28:41 
- * @Last Modified by: Yushuizeng
- * @Last Modified time: 2018-11-16 16:09:46
- */
 <template>
   <div class="action-sheet" >
     <transition name="actionsheet-mask">
@@ -23,6 +16,7 @@
 
 <script>
 export default {
+  name: 'we-action-sheet',
   data() {
     return {
       isShow: this.value,
@@ -90,7 +84,7 @@ export default {
       box-sizing: border-box;
     }
     &__content {
-      position: relative;  
+      position: relative;
     }
     &__mask {
       position: fixed;
@@ -99,14 +93,14 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, .3);  
+      background: rgba(0, 0, 0, .3);
     }
 
     &__close {
       position: absolute;
       right: 20px;
       top: 0px;
-      font-size: 50px;  
+      font-size: 50px;
       color: $gray-light;
       z-index: 99;
     }
@@ -122,7 +116,7 @@ export default {
     transform: translate3d(0,100%,0);
   }
   .actionsheet-mask-enter-active, .actionsheet-mask-leave-active {
-    transition: all .35s;  
+    transition: all .35s;
   }
   .actionsheet-mask-enter,.actionsheet-mask-leave-to {
     opacity: 0;

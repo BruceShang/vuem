@@ -1,11 +1,3 @@
-/*
- * @Desc: dialog-box 
- * @Author: shangzhen 
- * @Date: 2018-09-20 16:52:13 
- * @Last Modified by: yushuizeng
- * @Last Modified time: 2018-09-28 11:01:05
- */
-
 <template>
   <div class="dialog-box" :class="{'dialog-box__active': isShow}">
     <transition name="animation">
@@ -18,6 +10,7 @@
 
 <script>
 export default {
+  name: 'we-dialog-box',
   data() {
     return {
       isShow: this.value,
@@ -70,7 +63,7 @@ export default {
     right: 0;
     bottom: 0;
     display: none;
-    background: rgba(0, 0, 0, .3);  
+    background: rgba(0, 0, 0, .3);
     &__wrap {
       position: absolute;
       left: 50%;
@@ -78,15 +71,15 @@ export default {
       z-index: 2012;
       width: 100%;
       box-sizing: border-box;
-      background: #fff;    
-      border-radius: 4px;  
+      background: #fff;
+      border-radius: 4px;
       transform: translate(-50%, -50%);
     }
 
     &__close {
       width: 100%;
       text-align: right ;
-      font-size: 50px;  
+      font-size: 50px;
     }
     &__active {
       display: block;

@@ -121,30 +121,6 @@ export default [
         },
         component: () => import('views/ui/load-more.vue'),
       },
-      // {
-      //   name: 'ui-clip-board',
-      //   path: '/ui-clip-board',
-      //   meta: {
-      //     title: 'clip-board',
-      //   },
-      //   component: () => import('views/ui/clip-board.vue'),
-      // },
-      // {
-      //   name: 'ui-goods-list',
-      //   path: '/ui-goods-list',
-      //   meta: {
-      //     title: 'goods-list',
-      //   },
-      //   component: () => import('views/ui/goods-list.vue'),
-      // },
-      // {
-      //   name: 'ui-tab',
-      //   path: '/ui-tab',
-      //   meta: {
-      //     title: 'tab',
-      //   },
-      //   component: () => import('views/ui/tab.vue'),
-      // },
       {
         name: 'ui-address',
         path: '/ui-address',

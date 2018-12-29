@@ -1,10 +1,3 @@
-/*
- * @Desc: 唤醒App 
- * @Author: shangzhen 
- * @Date: 2018-10-13 13:22:53 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-10-13 13:38:46
- */
 <template>
   <div class="we-card">
     <div class="we-card__header">

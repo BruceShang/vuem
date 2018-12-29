@@ -1,10 +1,3 @@
-/*
- * @Desc: count-down 
- * @Author: shangzhen 
- * @Date: 2018-09-21 15:47:57 
- * @Last Modified by: yushuizeng
- * @Last Modified time: 2018-09-25 17:07:48
- */
 <template>
   <div class="count-down">
     <count-child :time="time" tag="div" @countdownend="countdownend">
@@ -16,9 +9,10 @@
 </template>
 
 <script>
-import countChild from './index.js'
+import countChild from './count-down.js'
 
 export default {
+  name: 'we-count-down',
   components: {
     countChild,
   },

@@ -1,10 +1,3 @@
-/*
- * @Desc: 单选 
- * @Author: shangzhen 
- * @Date: 2018-08-09 19:01:08 
- * @Last Modified by: shangzhen
- * @Last Modified time: 2018-09-21 11:20:07
- */
 <template>
     <div class="component-radio">
         <input type="radio"
