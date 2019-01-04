@@ -13,7 +13,7 @@ export default [
         name: 'ui',
         path: '/ui',
         meta: {
-          title: '组件列表',
+          title: '组件列表-test',
         },
         component: () => import('views/ui/home.vue'),
       },
